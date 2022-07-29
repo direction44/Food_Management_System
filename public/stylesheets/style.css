@@ -1,0 +1,17 @@
+.maincontainer {
+  background-color: #e17055;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background-color: azure;
+  padding: 20px;
+  width: 1050px;
+  border-radius: 30px;
+}
+.heading {
+  font-size: 30px;
+  color: #b71540;
+}

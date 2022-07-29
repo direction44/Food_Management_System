@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="/Food/edit_food_picture"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <div style="text-align: center">
+        <input
+          type="hidden"
+          value="<%=fooddetailsid%>"
+          name="fooddetailsid"
+        /><br /><br />
+        <h3><%=foodtype%></h3>
+        <h3><%=food%></h3>
+        <img src="/images/<%=picture%>" width="300 " /><br /><br />
+        <input type="hidden" value="<%=picture%>" name="oldpicture" />
+        <b>Select new Image</b><br />
+        <input type="file" name="picture" required /><br /><br />
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
